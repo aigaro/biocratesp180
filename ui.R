@@ -62,12 +62,16 @@ body <- dashboardBody(# Dashboard body
               )
             )),
     tabItem(tabName = 'statistics',
-            h1('Statistics tab'),
+            h1('Statistics tab')
+            ,
+            statistics_text 
+            ),
+    
+    tabItem(tabName = 'plots',
+            h2('Plots'),
             fluidRow(box(width = 12,
                          plotOutput(outputId = "Plot")
-                         ))),
-    tabItem(tabName = 'plots',
-            h2('Plots'))
+            )))
   ))
 
 
