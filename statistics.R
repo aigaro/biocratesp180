@@ -1,1 +1,1 @@
-print(df)
+statistics_text <- 'Choose group name man dude'
