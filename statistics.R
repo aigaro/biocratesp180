@@ -1,1 +1,1 @@
-statistics_text <- 'Choose group name man dude'
+statistics_text <- 'Choose group name man dude yeah'
