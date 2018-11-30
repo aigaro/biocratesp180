@@ -13,8 +13,10 @@ server <- function(input, output, session) {
         sep = input$sep,
         quote = input$quote
       )
-      df <- exclude.status(df)
+      
+      df <- exclude.status(df) # Exclude columns that have 'Status' in name
       print(df[1:10, 1:10])
+      
       output$Plot <- renderPlot({
         plot(df[, 7], df[, 8])
       })
