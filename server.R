@@ -11,7 +11,9 @@ server <- function(input, output, session) {
         inFile$datapath,
         header = input$header,
         sep = input$sep,
+        row.names =  as.numeric(input$rownames),
         quote = input$quote
+        
       )
       
       df <- exclude.status(df) # Exclude columns that have 'Status' in name

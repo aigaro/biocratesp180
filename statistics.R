@@ -5,3 +5,4 @@ exclude.status <- function(df) { # Create function to exclude colnames with 'Sta
   cols_to_exclude <- colnames(df %>% select(contains('status', ignore.case = TRUE))) #Select columns to exclude
   df <- df[, !names(df) %in% cols_to_exclude] # Exclude selected columns
 }
+

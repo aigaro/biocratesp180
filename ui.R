@@ -44,6 +44,12 @@ body <- dashboardBody(# Dashboard body
                                          Tab = "\t"),
                              selected = ","),
                 
+                # Input: Select row names ----
+                radioButtons("rownames", "Rownames",
+                             choices = c("First column" = 1,
+                                         "Second column" = 2),
+                             selected = 1),
+                
                 # Input: Select quotes ----
                 radioButtons("quote", "Quote",
                              choices = c(None = "",
